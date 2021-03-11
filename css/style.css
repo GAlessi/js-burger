@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.container{
+    width: 85%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: rgb(252,187,71);
+    padding: 80px;
+    text-align: center;
+    position: relative;
+}
+
+header img{
+    position: absolute;
+    top: -3px;
+    right: -100px;
+}
+
+#burgerName{
+    font-size: 50px;
+    border: none;
+    margin: 30px 0;
+}
+
+main{
+    flex-grow: 1;
+}
+main h2{
+    font-size: 30px;
+}
+
+ul{
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+li{
+    width: calc(100% / 3);
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+li img{
+    width: 50px;
+}
+
+li input{
+    background-color: red;
+}
+
+li span{
+    margin: 0 20px;
+}
+
+li .ingrNames{
+    width: 50px;
+}
+
+li span:last-child{
+    color: red;
+}
+
+#coupon{
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(255,234,190);
+    padding: 5px;
+}
+
+footer{
+    margin-top: 30px;
+    padding: 35px 50px;
+    background-color: rgb(193,0,95);
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h2{
+    display: inline-block;
+}
