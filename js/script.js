@@ -1,34 +1,39 @@
-var calculateBtn = document.getElementById('calculateBtn');
 
+// Inizializazione Variabili
+var calculateBtn = document.getElementById('calculateBtn');
+var totalPrice;
+var couponUser;
+var price;
+var coupons = [
+    "coupon1",
+    "coupon2",
+    "coupon3",
+    "coupon4"];
+
+// Lancio funzione dopo il click del bottone
 calculateBtn.addEventListener('click', function(){
     var burgerName = document.getElementById('burgerName').value;
 
-    if (burgerName.length < 0) {
+    if (burgerName.length < 1) {
         alert("Inserisci un nome, perfavore.")
 
     }else {
 
-        var totalPrice = 10;
+        totalPrice = 10;
         var ingredients = document.getElementsByClassName('ingredient');
         for (var i = 0; i < ingredients.length; i++) {
             var ingredient = ingredients[i];
-            var checkedState = ingredient.checked;
-            // console.log(ingredient, checkedState);
-            if (checkedState) {
-                var price = parseInt(ingredient.dataset.price);
+            if (ingredient.checked) {
+                price = parseInt(ingredient.dataset.price);
                 totalPrice += price;
-            }else {
             }
         }
+        couponUser = document.getElementById("coupon").value;
 
-        var coupons = [
-            "coupon1",
-            "coupon2",
-            "coupon3",
-            "coupon4"
-        ]
-        var couponUser = document.getElementById("coupon").value;
-        var coupon = coupons.includes("couponUser");
+        var coupon = coupons.includes(couponUser);
+        if (coupon) {
+            totalPrice = totalPrice * 0.8;
+        }
         console.log(couponUser, coupon);
 
 
