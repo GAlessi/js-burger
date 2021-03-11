@@ -82,6 +82,10 @@ li span:last-child{
     color: red;
 }
 
+li input{
+    pointer-events: none;
+}
+
 #coupon{
     width: 300px;
     border-radius: 5px;

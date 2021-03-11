@@ -8,7 +8,18 @@ var coupons = [
     "coupon1",
     "coupon2",
     "coupon3",
-    "coupon4"];
+    "coupon4",
+    "coupon5" ];
+
+// Selezione checkbox con click sul li 
+var lis = document.getElementsByTagName("li");
+for (var i = 0; i < lis.length; i++) {
+    var li = lis[i];
+    li.addEventListener('click', function functionName() {
+        this.children[2].checked = !this.children[2].checked;
+    })
+}
+
 
 // Lancio funzione dopo il click del bottone
 calculateBtn.addEventListener('click', function(){
