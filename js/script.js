@@ -25,6 +25,7 @@ for (var i = 0; i < lis.length; i++) {
 calculateBtn.addEventListener('click', function(){
     var burgerName = document.getElementById('burgerName').value;
 
+//verifico che sia inserito un nome
     if (burgerName.length < 1) {
         alert("Inserisci un nome, perfavore.")
 

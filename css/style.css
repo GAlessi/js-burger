@@ -1,3 +1,5 @@
+/* Regole generali pagina */
+
 *{
     margin: 0;
     padding: 0;
@@ -20,6 +22,7 @@ ul{
     border: 1px solid black;
 }
 
+/* Header */
 header{
     background-color: rgb(252,187,71);
     padding: 80px;
@@ -33,22 +36,25 @@ header img{
     right: -100px;
 }
 
-#burgerName{
-    font-size: 50px;
-    border: none;
-    margin: 30px 0;
-}
-
+/* MAIN */
 main{
     flex-grow: 1;
     overflow-y: auto;
     background-color: white;
     padding: 20px;
 }
+
+#burgerName{
+    font-size: 50px;
+    border: none;
+    margin: 30px 0;
+}
+
 main h2{
     font-size: 30px;
 }
 
+/* Regole lista elementi */
 ul{
     display: flex;
     height: 200px;
@@ -92,6 +98,7 @@ li input{
     pointer-events: none;
 }
 
+/* Regole per coupone e bottone */
 #coupon{
     width: 300px;
     border-radius: 5px;
@@ -111,6 +118,7 @@ li input{
     font-size: 20px;
 }
 
+/* Footer */
 footer{
     margin-top: 30px;
     padding: 35px 80px;
