@@ -21,5 +21,17 @@ calculateBtn.addEventListener('click', function(){
             }
         }
 
+        var coupons = [
+            "coupon1",
+            "coupon2",
+            "coupon3",
+            "coupon4"
+        ]
+        var couponUser = document.getElementById("coupon").value;
+        var coupon = coupons.includes("couponUser");
+        console.log(couponUser, coupon);
+
+
+        document.getElementById("prezzoTotale").innerHTML = totalPrice;
     }
 })
