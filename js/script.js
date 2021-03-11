@@ -11,7 +11,7 @@ var coupons = [
     "coupon4",
     "coupon5" ];
 
-// Selezione checkbox con click sul li 
+// Selezione checkbox con click sul li
 var lis = document.getElementsByTagName("li");
 for (var i = 0; i < lis.length; i++) {
     var li = lis[i];
@@ -45,9 +45,8 @@ calculateBtn.addEventListener('click', function(){
         if (coupon) {
             totalPrice = totalPrice * 0.8;
         }
-        console.log(couponUser, coupon);
 
 
-        document.getElementById("prezzoTotale").innerHTML = totalPrice;
+        document.getElementById("prezzoTotale").innerHTML = totalPrice.toFixed(2);
     }
 })
